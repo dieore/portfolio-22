@@ -1,9 +1,10 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import SectionAbout from "./components/SectionAbout";
+import AboutSection from "./components/AboutSection";
 import HabilitiesSection from "./components/HabilitiesSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 import "./App.css";
-
 
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
       <div className="bg bg3"></div>
       <Navbar />
       <Header />
-      <SectionAbout/>
+      <AboutSection/>
       <HabilitiesSection/>
+      <ContactSection/>
+      <Footer/>
     </div>
   );
 }

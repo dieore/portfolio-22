@@ -1,4 +1,4 @@
-const SectionAbout = () => {
+const AboutSection = () => {
     return (
         <section className="h-96 grid place-items-center place-content-center gap-8 sm:p-20 p-12 text-center bg-blue text-white font-light">
             <h1 className="sm:text-2xl tracking-wider">ABOUT ME</h1>
@@ -7,4 +7,4 @@ const SectionAbout = () => {
     )
 }
 
-export default SectionAbout;
+export default AboutSection;
