@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="grid place-items-center place-content-evenly sm:grid-cols-2 h-96 text-white font-light">
+        <header id="home" className="grid place-items-center place-content-evenly sm:grid-cols-2 h-96 text-white font-light">
             <div className="flex flex-col text-center sm:text-left">
                 <h1 className="text-4xl tracking-wider">DIEGO OREFICI</h1>
                 <h2 className="text-2xl tracking-wider">Developer</h2>

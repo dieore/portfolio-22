@@ -12,7 +12,7 @@ const HabilitiesSection = () => {
     const [projects, setProjects] = useState(false);
 
     return (
-        <section className="grid grid-cols-1 gap-4 md:grid-cols-2 p-10 bg-white text-white">
+        <section id="skills" className="grid grid-cols-1 gap-4 md:grid-cols-2 p-10 bg-white text-white">
             <Accordion allowZeroExpanded={true} className="bg-light-gray">
                 <AccordionItem>
                     <AccordionItemHeading>

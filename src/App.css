@@ -81,3 +81,7 @@
       visibility: collapse;
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

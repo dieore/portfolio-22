@@ -24,10 +24,10 @@ const Navbar = () => {
     return (
         <nav className={navigationBackground}>
             <ul className="hidden sm:grid grid-cols-4 place-items-center text-white">
-                <li className="hover:underline hover:underline-offset-8">HOME</li>
-                <li className="hover:underline hover:underline-offset-8">ABOUT</li>
-                <li className="hover:underline hover:underline-offset-8">SKILLS</li>
-                <li className="hover:underline hover:underline-offset-8">CONTACT</li>
+                <a href="#home" className="hover:underline hover:underline-offset-8 cursor-pointer">HOME</a>
+                <a href="#about" className="hover:underline hover:underline-offset-8 cursor-pointer">ABOUT</a>
+                <a href="#skills" className="hover:underline hover:underline-offset-8 cursor-pointer">SKILLS</a>
+                <a href="#contact" className="hover:underline hover:underline-offset-8 cursor-pointer">CONTACT</a>
             </ul>
             <div className="flex justify-center sm:hidden">
                 <img className="w-8" src="/img/burguer.png" />
