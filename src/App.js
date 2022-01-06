@@ -7,19 +7,19 @@ import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
-  return (
-    <div>
-      <div className="bg"></div>
-      <div className="bg bg2"></div>
-      <div className="bg bg3"></div>
-      <Navbar />
-      <Header />
-      <AboutSection/>
-      <HabilitiesSection/>
-      <ContactSection/>
-      <Footer/>
-    </div>
-  );
+	return (
+		<>
+			<div className="bg"></div>
+			<div className="bg bg2"></div>
+			<div className="bg bg3"></div>
+			<Navbar />
+			<Header />
+			<AboutSection />
+			<HabilitiesSection />
+			<ContactSection />
+			<Footer />
+		</>
+	);
 }
 
 export default App;

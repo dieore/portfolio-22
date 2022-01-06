@@ -7,7 +7,7 @@ const Footer = () => {
             </div>
             <img className="rounded h-32" src="/img/diego.jpeg" />
             <hr className="w-4/5 sm:w-2/5" />
-            <p>© {new Date().getFullYear()}. All rights, reserved.</p>
+            <p className="text-sm">© {new Date().getFullYear()}. All rights, reserved.</p>
         </footer>
     )
 }
