@@ -46,7 +46,7 @@ const Navbar = () => {
                 open={showCV}
                 setStateFromComponent={setShowCV}
             >
-                <img className="h-screen" src="/img/cv.png" />
+                <img className="h-screen hover:scale-150" src="/img/cv.png" />
             </Modal>
         </>
     )
