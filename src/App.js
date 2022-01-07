@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import AboutSection from "./components/AboutSection";
-import HabilitiesSection from "./components/HabilitiesSection";
-import ContactSection from "./components/ContactSection";
+import About from "./components/About";
+import Habilities from "./components/Habilities";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import "./App.css";
 
@@ -14,9 +14,9 @@ function App() {
 			<div className="bg bg3"></div>
 			<Navbar />
 			<Header />
-			<AboutSection />
-			<HabilitiesSection />
-			<ContactSection />
+			<About />
+			<Habilities />
+			<Contact />
 			<Footer />
 		</>
 	);

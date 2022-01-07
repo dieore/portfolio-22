@@ -3,7 +3,7 @@ import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const AboutSection = () => {
+const Contact = () => {
     const [message, setMessage] = useState({
         email: "",
         body: ""
@@ -78,7 +78,7 @@ const AboutSection = () => {
                     onClick={() => sendForm()}
                 >
                     {
-                        loader ? <p className="animate-pulse">Un momento por favor</p> : "SEND"
+                        loader ? <p className="animate-pulse">Un momento por favor</p> : <p className="text-sm">SEND</p>
                     }
                 </button>
             </div>
@@ -87,4 +87,4 @@ const AboutSection = () => {
     )
 }
 
-export default AboutSection;
+export default Contact;

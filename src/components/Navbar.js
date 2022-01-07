@@ -50,6 +50,6 @@ const Navbar = () => {
             </Modal>
         </>
     )
-}
+};
 
 export default Navbar;
