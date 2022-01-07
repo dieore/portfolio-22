@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer id="contact" className="grid grid-cols-1 place-items-center place-content-between h-96 p-10 bg-gray text-white">
+        <footer id="contact" className="grid grid-cols-1 place-items-center place-content-evenly h-80 bg-gray text-white">
             <div className="flex flex-col items-center">
                 <h3 className="text-2xl tracking-wide">DIEGO OREFICI</h3>
                 <h3 className="text-sm tracking-wide">JS DEVELOPER</h3>

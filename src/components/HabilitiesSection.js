@@ -6,13 +6,13 @@ const HabilitiesSection = () => {
     const [showWorks, setShowWorks] = useState(false);
 
     return (
-        <>
+        <section id="skills" className="p-10 bg-white">
             {
                 showWorks
-                    ? <Work />
-                    : <Accordion setShowWorks={setShowWorks}/>
+                    ? <Work setShowWorks={setShowWorks} />
+                    : <Accordion setShowWorks={setShowWorks} />
             }
-        </>
+        </section>
     )
 }
 
