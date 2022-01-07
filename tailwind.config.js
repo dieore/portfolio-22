@@ -13,7 +13,8 @@ module.exports = {
       "light-gray-200": "#cbd5e1",
       orange: "#d97706",
       black: "#000000",
-      purple: "#781C68"
+      purple: "#781C68",
+      red: "#FF1700"
     },
     extend: {},
   },
