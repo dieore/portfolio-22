@@ -23,7 +23,9 @@ const Job = ({ app }) => {
                 open={demo}
                 setStateFromComponent={setDemo}
             >
-                <video className="w-3/4" src={app.src} autoplay controls loop />
+                <div className="grid place-items-center place-content-center w-screen h-screen">
+                    <video className="w-3/4" src={app.src} autoplay controls loop />
+                </div>
             </Modal>
         </div>
     )

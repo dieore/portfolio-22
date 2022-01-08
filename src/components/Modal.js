@@ -19,18 +19,18 @@ const Modal = ({ children, open, setStateFromComponent }) => {
         <>
             {
                 open && (
-                    <div className="overflow-auto fixed w-full h-full bg-black bg-opacity-60 top-0 left-0">
+                    <div className="overflow-auto fixed w-screen h-screen bg-black bg-opacity-60 top-0 left-0 z-30">
                         <button onClick={() => {
                             setShow(false);
                             setStateFromComponent(false)
                         }}
-                            className=" hover:bg-opacity-80 outline-none fixed bottom-10 right-10 p-3 border-white border bg-red text-white"
+                            className=" hover:bg-opacity-80 outline-none fixed bottom-10 right-10 p-3 z-40 border-white border bg-red text-white"
                         >
                             CLOSE
                         </button>
-                        <div className="grid place-items-center place-content-center h-screen">
+                        <>
                             {children}
-                        </div>
+                        </>
                     </div>
                 )
             }
