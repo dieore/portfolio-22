@@ -23,7 +23,7 @@ export const pulso = {
 }
 
 export const dulce = {
-    src: "/videos/dulce.mp4",
+    src: "/videos/dulcee.mp4",
     to: "https://dulcearoma.netlify.app",
     message: "You can login with these credentials. User: dulcearoma. Password: dulcearoma.",
     images: ["/img/dulcecaja.png", "/img/dulcecajatwo.png", "/img/dulceprod.png"],
