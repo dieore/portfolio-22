@@ -41,19 +41,19 @@ const Contact = () => {
             <div className="h-72 p-6 flex flex-col justify-between tracking-wide">
                 <div className="flex items-center">
                     <img className="w-6 h-6" src="/img/linkedin.png" />
-                    <p className="cursor-pointer pl-3" onClick={() => window.open("https://www.linkedin.com/in/diegoore/")}>diegoore</p>
+                    <p className="cursor-pointer pl-3 hover:underline" onClick={() => window.open("https://www.linkedin.com/in/diegoore/")}>diegoore</p>
                 </div>
                 <div className="flex items-center">
                     <img className="w-6 h-6" src="/img/github.png" />
-                    <p className="cursor-pointer pl-3" onClick={() => window.open("https://www.github.com/dieore")}>dieore</p>
+                    <p className="cursor-pointer pl-3 hover:underline" onClick={() => window.open("https://www.github.com/dieore")}>dieore</p>
                 </div>
                 <div className="flex items-center">
                     <img className="w-6 h-6" src="/img/email.png" />
-                    <p className="pl-3">orefici.diego@gmail.com</p>
+                    <p className="pl-3 hover:underline">orefici.diego@gmail.com</p>
                 </div>
                 <div className="flex items-center">
                     <img className="w-6 h-6" src="/img/whatsapp.png" />
-                    <p className="cursor-pointer pl-3" onClick={() => window.open("https://api.whatsapp.com/send?phone=543413181724")}>+54 341 3 181 724</p>
+                    <p className="cursor-pointer pl-3 hover:underline" onClick={() => window.open("https://api.whatsapp.com/send?phone=543413181724")}>+54 341 3 181 724</p>
                 </div>
             </div>
             <div className="text-blue flex flex-col p-6">
@@ -73,16 +73,16 @@ const Contact = () => {
                     value={message.body}
                 />
                 <button
-                    className="bg-gray p-3 rounded mt-6 text-white hover:bg-opacity-80"
+                    className="bg-gray p-3 rounded mt-6 text-white text-sm hover:bg-opacity-80"
                     disabled={loader}
                     onClick={() => sendForm()}
                 >
                     {
-                        loader ? <p className="animate-pulse">Un momento por favor</p> : <p className="text-sm">SEND</p>
+                        loader ? <p className="animate-pulse">SENDING...</p> : <p>SEND</p>
                     }
                 </button>
             </div>
-            <ToastContainer  position="bottom-center" toastStyle={{ backgroundColor: "#d97706", color: "white" }}  />
+            <ToastContainer position="bottom-center" toastStyle={{ backgroundColor: "rgb(16, 38, 65)", color: "white" }}  />
         </section>
     )
 }

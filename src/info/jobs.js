@@ -16,7 +16,7 @@ export const soleal = {
 
 export const pulso = {
     src: "/videos/pulso.mp4",
-    to: "https://siempresano.com.ar",
+    to: "https://play.google.com/store/apps/details?id=com.pulsomobile",
     message: "The app can only be access from Argentina.",
     images: [],
     text: "First time with React Native. Of course, I knew React, but in this project, I learned about React Router Navigation, about local storage on mobile and React Native Paper, etc. Another developer teached me several things and also started the project from scratch to do the right configuration. I also was very close in the Android process to deploy the app. Technology stack: React Native, CSS. "
