@@ -1,15 +1,12 @@
 import { useState } from "react";
-import { Fade } from "react-reveal";
 import { siempresano, soleal, pulso, dulce } from "../info/jobs";
 import Job from "./Job";
 
 const Tabs = ({ children, section, setShowWorks }) => {
     return (
         <div className="col-span-4 bg-gray p-6 z-50">
-            <Fade>
-                {children[section]}
-                <button className="md:hidden text-sm mt-4 p-2 w-full outline-none bg-light-blue text-white rounded hover:bg-opacity-80 underline-offset-8 cursor-pointer" onClick={() => setShowWorks(false)}>GO BACK</button>
-            </Fade>
+            {children[section]}
+            <button className="md:hidden text-sm mt-4 p-2 w-full outline-none bg-light-blue text-white rounded hover:bg-opacity-80 underline-offset-8 cursor-pointer" onClick={() => setShowWorks(false)}>GO BACK</button>
         </div>
     )
 };
