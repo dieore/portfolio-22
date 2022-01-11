@@ -37,7 +37,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 sm:place-items-center place-content-center sm:p-6 bg-blue text-white font-light">
+        <section id="contact" className="grid grid-cols-1 md:grid-cols-2 sm:place-items-center place-content-center sm:p-6 bg-blue text-white font-light">
             <div className="h-72 p-6 flex flex-col justify-between tracking-wide">
                 <div className="flex items-center">
                     <img className="w-6 h-6" src="/img/linkedin.png" />

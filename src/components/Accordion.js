@@ -22,7 +22,7 @@ const AccordionComponent = ({ setShowWorks }) => {
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                         <p className="font-light">
-                            React, React Native (mobile) and Next JS, mostly.
+                            React, React Native (mobile) and Next JS.
                         </p>
                     </AccordionItemPanel>
                 </AccordionItem>
