@@ -78,7 +78,7 @@ const Contact = () => {
                     onClick={() => sendForm()}
                 >
                     {
-                        loader ? <p className="animate-pulse">SENDING...</p> : <p>SEND</p>
+                        loader ? <p className="animate-spin">PROCESSING...</p> : <p>SEND</p>
                     }
                 </button>
             </div>
