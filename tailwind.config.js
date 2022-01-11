@@ -16,7 +16,11 @@ module.exports = {
       purple: "#781C68",
       red: "#FF1700"
     },
-    extend: {},
+    extend: {
+      spacing: {
+        '90': '23rem',
+      }
+    },
   },
   plugins: [],
 }

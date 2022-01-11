@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Modal from "./Modal";
+import { Fade } from "react-reveal";
 
 const onScrollDown = "sm:p-6 p-3 sticky top-0 bg-blue bg-opacity-90 z-10";
 const onScrollTop = "sm:p-6 p-3 sticky top-0 z-10";
@@ -59,7 +60,9 @@ const Navbar = () => {
                 open={showCV}
                 setStateFromComponent={setShowCV}
             >
-                <img className="lg:px-40 p-8" src="/img/cv.png" />
+                <Fade>
+                    <img className="lg:px-40 p-8" src="/img/cv.png" />
+                </Fade>
             </Modal>
         </>
     )
