@@ -11,7 +11,7 @@ const Job = ({ app }) => {
             <button className="underline text-left outline-none hover:font-semibold" onClick={() => window.open(app.to)}>Take me to the app</button>
             {
                 app.mobile ? (
-                    <div className="grid grid-cols-2 md:mt-0 mt-6 md:grid-cols-4 w-6/6 sm:w-2/6 gap-3 place-content-center place-items-center">
+                    <div className="grid grid-cols-2 md:grid-cols-4 md:mt-0 mt-6 sm:w-2/6 gap-3 place-content-center place-items-center">
                         {
                             app.images.map(i => (
                                 <img className="rounded" src={i} />
