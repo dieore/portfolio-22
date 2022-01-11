@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Modal from "../components/Modal";
-import { Fade } from "react-reveal";
 
 const Job = ({ app }) => {
     const [demo, setDemo] = useState(false);
@@ -38,9 +37,7 @@ const Job = ({ app }) => {
                 setStateFromComponent={setDemo}
             >
                 <div className="grid place-items-center place-content-center w-screen h-screen">
-                    <Fade>
-                        <video className="w-3/4" src={app.src} autoplay controls loop />
-                    </Fade>
+                    <video className="w-3/4" src={app.src} autoplay controls loop />
                 </div>
             </Modal>
         </div >
