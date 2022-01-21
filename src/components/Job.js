@@ -9,7 +9,30 @@ const Job = ({ app }) => {
             <p id="content">{app.text}</p>
             <button className="underline text-left outline-none hover:font-semibold md:mt-0 mt-6" onClick={() => setDemo(true)}>Watch demo</button>
             <button className="underline text-left outline-none hover:font-semibold" onClick={() => window.open(app.to)}>Take me to the app</button>
+            {/* if i use conditional rendering, there'is an unlike effect when displaying the images */}
             {
+                app.mobile && (
+                    <div className="grid grid-cols-2 md:grid-cols-4 md:mt-0 mt-6 sm:w-2/6 gap-3 place-content-center place-items-center">
+                        {
+                            app.images.map(i => (
+                                <img className="rounded" src={i} />
+                            ))
+                        }
+                    </div>
+                )
+            }
+            {
+                !app.mobile && (
+                    <div className="grid grid-cols-1 md:place-items-start place-items-center md:mt-0 mt-6 md:gap-0 gap-6 md:grid-cols-3">
+                        {
+                            app.images.map(i => (
+                                <img className="w-5/6 rounded" src={i} />
+                            ))
+                        }
+                    </div>
+                )
+            }
+            {/* {
                 app.mobile ? (
                     <div className="grid grid-cols-2 md:grid-cols-4 md:mt-0 mt-6 sm:w-2/6 gap-3 place-content-center place-items-center">
                         {
@@ -28,7 +51,7 @@ const Job = ({ app }) => {
                         }
                     </div>
                 )
-            }
+            } */}
             {
                 app.message && <p className="text-sm md:text-left md:mt-0 mt-6 text-center">{app.message}</p>
             }
