@@ -12,7 +12,7 @@ const Job = ({ app }) => {
             {/* if i use conditional rendering, there'is an unlike effect when displaying the images */}
             {
                 app.mobile && (
-                    <div className="grid grid-cols-2 md:grid-cols-4 md:mt-0 mt-6 sm:w-2/6 gap-3 place-content-center place-items-center">
+                    <div className="fade-in grid grid-cols-2 md:grid-cols-4 md:mt-0 mt-6 sm:w-2/6 gap-3 place-content-center place-items-center">
                         {
                             app.images.map(i => (
                                 <img className="rounded" src={i} />
@@ -23,7 +23,7 @@ const Job = ({ app }) => {
             }
             {
                 !app.mobile && (
-                    <div className="grid grid-cols-1 md:place-items-start place-items-center md:mt-0 mt-6 md:gap-0 gap-6 md:grid-cols-3">
+                    <div className="fade-in grid grid-cols-1 md:place-items-start place-items-center md:mt-0 mt-6 md:gap-0 gap-6 md:grid-cols-3">
                         {
                             app.images.map(i => (
                                 <img className="w-5/6 rounded" src={i} />
